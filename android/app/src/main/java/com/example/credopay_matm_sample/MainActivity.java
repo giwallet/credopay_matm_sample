@@ -95,9 +95,7 @@ public class MainActivity extends FlutterActivity {
     intent.putExtra("TRANSACTION_TYPE", transactionType);
     intent.putExtra("DEBUG_MODE", true);
     intent.putExtra("PRODUCTION", true);
-    if (amount > 0) {
-      intent.putExtra("AMOUNT", amount);
-    }
+    intent.putExtra("AMOUNT", amount);
     intent.putExtra("LOGIN_ID", mid);
     intent.putExtra("SUCCESS_DISMISS_TIMEOUT", 1L);
     intent.putExtra("MOBILE_NUMBER", customerMobile);
