@@ -176,7 +176,7 @@ public class MainActivity extends FlutterActivity {
             if (error != null) {
               Log.d("TRANSACTION_CANCELLED error", error);
             }
-            _result.success("{\"error\":" +true +"\"error\":\"" +error+"}");
+            _result.success("{\"error\":"+true +",\"message\":\"" +error+"\"}");
           }
 
           break;
@@ -186,7 +186,7 @@ public class MainActivity extends FlutterActivity {
             if (error != null) {
               Log.d("VOID_CANCELLED error", error);
             }
-            _result.success("{\"error\":" +true +"\"error\":\"" +error+"}");
+            _result.success("{\"error\":" +true +"\"error\":\"" +error+"\"}");
           }
 
           break;
@@ -212,7 +212,7 @@ public class MainActivity extends FlutterActivity {
             if (error != null) {
               Log.d("CHANGE_PASSWORD_FAILED error", error);
             }
-            _result.success("{\"error\":" +true +"\"error\":\"" +error+"}");
+            _result.success("{\"error\":" +true +",\"error\":\"" +error+"}");
           }
         default:
           break;
